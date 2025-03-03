@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Defines the character encoding and viewport settings for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Modern Website</title>
+    
+    <style>
+        /* Resets margin, padding, and ensures consistent box sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Sets a gradient background and aligns text to the center */
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* Styles the navigation bar with a dark background and blur effect */
+        .navbar {
+            background: rgba(44, 62, 80, 0.9);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Styles the logo text */
+        .logo {
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Arranges navigation links in a row with spacing */
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        /* Styles the navigation links */
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        /* Changes link color on hover */
+        .nav-links a:hover {
+            color: #e74c3c;
+        }
+
+        /* Styles the hero section with padding and max width */
+        .hero {
+            padding: 12rem 2rem 6rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Styles the main heading in the hero section */
+        .hero h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        /* Styles the paragraph in the hero section */
+        .hero p {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Styles the call-to-action button */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+        }
+
+        /* Adds hover effect to the button */
+        .btn:hover {
+            background: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Creates a responsive grid layout for content sections */
+        .content {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Styles individual content cards */
+        .card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Adds hover effect to cards */
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Styles headings inside the cards */
+        .card h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        /* Styles paragraph text inside the cards */
+        .card p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* Styles the footer section */
+        .footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            font-size: 1.1rem;
+        }
+
+        /* Adjusts navigation links layout for smaller screens */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar with logo and links -->
+    <nav class="navbar">
+        <div class="logo">The Impact of COVID-19 on Mental Health</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero section with a heading, paragraph, and button -->
+    <section class="hero">
+        <h1>Welcome to Our Website</h1>
+        <p>Discover some data and graphs </p>
+        <a href="#explore" class="btn">Next Page</a>
+    </section>
+
+    <!-- Content section with three feature cards -->
+    <section class="content">
+        <div class="card">
+            <h2>Research Question:</h2>
+            <p>How does the pandemic of COVID-19 negatively and positively affect
+                the mental health and mental vulnerability of different age groups in our society,(children,
+                adolescents, adults, and the elderly), and what long-term consequences have risen and
+                might be expected?</p>
+        </div>
+        <div class="card">
+            <h2>APA Sources</h2>
+            <p>Ut enim ad minim veniam...</p>
+        </div>
+        <div class="card">
+            <h2></h2>
+            <p>INSERT IMAGES</p>
+        </div>
+    </section>
+
+    <!-- Footer section with copyright information -->
+    <footer class="footer">
+        <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+    </footer>
+</body>
+</html>
