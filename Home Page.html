@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #2c3e50;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .box {
+            background: #fff;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            color: #2c3e50;
+        }
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h2 {
+            cursor: pointer;
+            transition: text-shadow 0.3s;
+        }
+        h2:hover {
+            text-shadow: 0 0 15px #e74c3c;
+        }
+        .data-section, .graph-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <h1>Main Page</h1>
+        <div class="box">
+            <h2 onclick="window.location.href='topic.html'">Why We Chose This Topic</h2>
+            <p id="explanation">Click the button to reveal the explanation.</p>
+            <button class="button" onclick="showExplanation()">Show Explanation</button>
+            <img> <source>
+        </div>
+        <div class="data-section">
+            <div class="box" onclick="window.location.href='data1.html'">Analysis of Data 1</div>
+            <div class="box" onclick="window.location.href='data2.html'">Analysis of Data 2</div>
+            <div class="box" onclick="window.location.href='data3.html'">Analysis of Data 3</div>
+        </div>
+        <div class="graph-section">
+            <div class="box" onclick="window.location.href='graph1.html'">Graph 1 with Explanation</div>
+            <div class="box" onclick="window.location.href='graph2.html'">Graph 2 with Explanation</div>
+        </div>
+    </div>
+    <script>
+        function showExplanation() {
+            document.getElementById("explanation").innerText = "This topic was chosen because it has a significant impact and requires further analysis.";
+        }
+    </script>
+</body>
+</html>
